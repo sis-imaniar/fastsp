@@ -61,6 +61,7 @@ jobs:
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'fastsp'
+          app-name: 'fastapisp'
           slot-name: 'Production'
+
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_24C783E6336649CEA008814F62C4978B }}
