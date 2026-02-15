@@ -19,7 +19,7 @@ def get_connection():
         f"PWD={password};"
         f"Encrypt=yes;"
         f"TrustServerCertificate=no;"
-        "Connection Timeout=30;"
+        f"Connection Timeout=30;"
     )
 
     return conn
