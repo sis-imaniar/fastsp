@@ -17,7 +17,9 @@ def get_connection():
         f"DATABASE={database};"
         f"UID={user};"
         f"PWD={password};"
-        "TrustServerCertificate=yes;"
+        f"Encrypt=yes;"
+        f"TrustServerCertificate=no;"
+        "Connection Timeout=30;"
     )
 
     return conn
